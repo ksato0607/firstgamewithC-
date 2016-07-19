@@ -1,0 +1,58 @@
+	1/22/16: Understand the assignment, Pseudo code is written.
+	1/23/16: Make rocks, rooms in a dungeon. 
+	1/25/16: Connect rooms with corridors. 
+	1/26/16: Submit the 1.01 assignment.
+	1/27/16: Start working on 1.02 assignment.
+	1/28/16: Added hardness and struct for room information.
+	1/29/16: Wrote the writeFile() function.
+	1/30/16: Wrote the readFile() function.
+	2/1/16: Created a path getenv("HOME") + "/.rlg327/dungeon" and also learned about unsigned integer.Still need to work on readFile().
+	2/2/16: readFile()is completed. Tested if readFile() works correctly by printf(). Added the argument in the command line, either "--save" or "--load". Submitted.
+	2/3/16: Started assignment-1.03.Randomly assigned PC.
+	2/4/16: Understand how Dijkstra algorithm works.
+	2/5/16: Learned how priority queue works.
+	2/6/16: Downloaded the professors' code from BB. Wrote the code for Dijkstra algorithm.
+	2/8/16: Went to office hour and asked about the binheap.c file.
+	2/9/16: The program finally worked and produced the output as I wanted. However, once in a while, it shows error. I believe that it is due to memory leak in heap.
+	2/11/16: Dijkstra function for tunneling monster is created.
+	2/15/16: Went to the office hour to solve the bug described above.
+	2/16/16: Submit the assignment-1.03. 
+	2/16/16: Started assignment-1.04
+	2/17/16: Added a PC movement.
+	2/18/16: Added structs for characters which include PC and monsters.
+	2/20/16: I added a monster and make a function "move". The monster has tellepathy and intellegence as abilitiy. binary heap is used to organize turn.
+	2/21/16: I added the number of monsters.
+	2/22/16: I added the switch "--nummon" to get the number of monsters. Then I added functions for different movement depending on the ability. 
+	2/23/16: Spent a lot of time debugging. When monsters collide each other, I got some problems. Also, I debugged the function tunnelingMove(). They are solved now and the assignment is submitted.
+	2/24/16: Start assignment-1.05
+	2/29/16: Learned how to move PC using keyboards.
+	3/3/16: Went to office hour and learned how to use mvaddch().
+	3/4/16: Decided to start using professor's code. Tried to understand.
+	3/5/16: Added <ncurses.h> and -lncurses in the Makefile. Now PC is moved with keyboards.
+	3/6/16: Added stairs.
+	3/7/16: Added 'm' character for user interface. List of monsters is shown.
+	3/8/16: Added the list of monsters with their positions. If they are too large, arrow key works to scroll up and down. Now '<' and '>' work to go up and down. 'S' is added so that it exits the game. Submitted the assignment.
+	3/9/16: Start reading assignment-1.06
+	3/15/16: Started learning more about C++ before actually writing code.
+	3/20/16: During the spring break, I worked on it and asked questions through email, but it was very confusing for me. I was not able to make much progress... I added extern "C".
+	3/21/16: Dr.Sheaffer gave us a lot of hints about how to make objects and opaque handles during the lecture. Today, I made an empty struct for character_t, pc_t, npc_t and other objects. Also, getter and setter for objects are created.   
+	3/22/16: Spent most of my time creating opaque handles. npc.cpp, pc.cpp, character.cpp and move.c, dungeon.c are compiled correctly. At the end, I got some undefined reference, but after I added extern "C" to path.c and dungeon.c, the problem was solved. Submitted.
+	3/24/16: Started the assignment.
+	3/25/16: The extension of .c is changed to .cpp for all files. Did some casting to solve some errors.
+	3/27/16: Solved all the warnings and written some codes to read a text file.
+	3/28/16: Start reading the file. Printing without checking if the description is valid. I will work on this tomorrow.
+	3/29/16: Wrote some code so that the program checks if the monster description is valid. Also, npc_desc class is created to make objects. Vector is used to store the information of monsters. Submitted.
+	3/30/16: Started working on assignment-1.08
+	4/2/16: Made monster's instances.
+	4/3/16: Placed monsters on a dungeon.
+	4/4/16: Placed objects on a dungeon.
+	4/5/16: Set the color of monsters and objects on a dungeon. Objects are rendered again when a character moves over an object. Submitted.
+	4/6/16: Start reading the assignment.
+	4/8/16: Added hitpoints and damage to PC.
+	4/9/16: Picking up items when PC walks over them.
+	4/11/16:Listing the PC inventory and equipment by typing 'i' and 'e'.
+	4/12/16:Wearing the equipment from the inventory list. Combat for NPCs is updated so that they do not fight each other. In addition, combat between NPC and PC is updated as well so that they will lose only hp == 0. Submitted.
+	4/14/16:Decided to make a leaderboard.
+	4/17/16:Created file and read file.
+	4/18/16:Made bubbleSort() to sort the rankings. Created a struct array to keep both nummon and player_name.
+	4/19/16:Spent a lot of time debugging finding a path. Added some initial players in array as default. Submitted. 

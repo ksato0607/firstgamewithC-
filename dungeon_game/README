@@ -1,0 +1,18 @@
+Author: Keisuke Sato
+Date:4/19
+File: character.cpp, character.h, descriptions.cpp, descriptions.h, dice.cpp, dice.h, dims.h, dungeon.cpp, dungeon.h heap.cpp, heap.h, io.cpp, io.h, macros.h, move.cpp, move.h, npc.cpp, npc.h, object.cpp, object.h, path.cpp, path.h, pc.cpp, pc.h, rlg327.cpp, utils.cpp, utils.h
+
+In this assignment, I added a leaderboard (ranking system). This is used to track who beats most monters in this game. For example, if a player, JOHN beats 3 monsters, it is recorded in a file and if a player, HANA beats 1 monster, it is recorded as well. This leaderboard is created so that the highest five scores is kept in a file and display in the beginning of the game. Once a player ends the game, the program compares if the score is higher than any of five records, and if it is, it will be saved and sorted using bubbleSort(). This program asks player's name at first. Also, at the bottom line of display, the pc's hp, speed, and the number of monster beaten are displayed. Once the highest score is achievd, "HIGHEST SCORE!!" will be displayed.
+
+There are three main functions I created.
+io_initial_display():
+This method is called right after the dungeon is created. Users can type either 'r' to look the ranking or 'p' to play the game.
+
+read_ranking():
+This method reads file and display the rankings when a user types 'r'. As default, two players are already in rank_array so that TA does not have to play too many times to confirm that if my program sorts correctly. 
+
+write_ranking():
+This method writes the ranking on a file. The name of the file is "ranking". If a player beats at least one monster, the program compares the number of monster beaten with the lowest number and the bigger one will take the place. Then the order is sorted by bubbleSort().
+
+
+Also, I added a hospital "+" in a dungeon. It works exactly like stairs and when PC moves to '+' and type '+', the PC's hp becomes 1000 which is what is set in the beginning.
